@@ -1,12 +1,10 @@
-function App() {
+import { Products } from "./components/Products";
+import { products } from "./mocks/products.json";
 
+export const App = () => {
   return (
     <>
-      <main>
-        Hello Aquí
-      </main>
+      <Products products={products} />
     </>
   )
 }
-
-export default App
