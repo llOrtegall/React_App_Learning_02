@@ -2,7 +2,7 @@
 Proyecto realizado con Vite template React JavaScript + SWC --> yarn
 
 1. Ecommerce
-  - Muestra una lista de productos que vienen de un JSON  
+  - Muestra una lista de productos que vienen de un JSON   (listo)
   - Añadir un filtro por categoria
   - Añadir un filtro por precio
 
