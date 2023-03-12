@@ -5,13 +5,13 @@ export function Products({ products }) {
   return (
     <main className='products'>
       <ul>
-        {products.slice(0, 10).map(product => (
-          <li key={product.id}>
+        {products.slice(0, 10).map(item => (
+          <li key={item.id}>
             <img
-              src={product.thumbnail}
-              alt={product.title} />
+              src={item.thumbnail}
+              alt={item.title} />
             <div>
-              <strong>{product.title}</strong> - $ {product.price}
+              <strong>{item.title}</strong> - $ {item.price}
             </div>
             <div>
               <button>
