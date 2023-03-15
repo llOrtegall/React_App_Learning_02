@@ -9,12 +9,12 @@ import { useFilters } from "./hooks/useFilters";
 
 export const App = () => {
   const [products] = useState(inicialProducts)
-  const { filters, filterProducts, setFilters } = useFilters()
+  const { filters, filterProducts } = useFilters()
   const filteredProducts = filterProducts(products)
 
   return (
     <>
-      <Header changeFilters={setFilters} />
+      <Header />
       <Products products={filteredProducts} />
       {IS_DEVELOMENT && <Footer filters={filters} />}
     </>
