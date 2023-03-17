@@ -18,7 +18,6 @@ export function Cart() {
             <div>
               <strong>iPhone</strong> - $1499
             </div>
-
             <footer>
               <small>
                 Qty: 1
@@ -27,7 +26,6 @@ export function Cart() {
             </footer>
           </li>
         </ul>
-
         <button>
           <ClearCartIcon />
         </button>
