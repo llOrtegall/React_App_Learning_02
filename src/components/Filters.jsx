@@ -5,12 +5,10 @@ import { useFilters } from '../hooks/useFilters'
 export const Filters = () => {
   const { filters, setFilters } = useFilters()
 
-
   const minPriceFilteredId = useId()
   const categoryFilteredId = useId()
 
   const handleChangePrice = (event) => {
-
 
     setFilters(prevState => ({
       ...prevState,

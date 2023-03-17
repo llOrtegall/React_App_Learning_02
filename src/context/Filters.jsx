@@ -1,6 +1,4 @@
 import { createContext, useState } from "react";
-
-
 // TODO: 1. Crear el context
 export const FiltersContext = createContext()
 

@@ -4,6 +4,7 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { IS_DEVELOMENT } from "./config";
 import { useFilters } from "./hooks/useFilters";
+import { Cart } from "./components/Cart";
 
 
 export const App = () => {
@@ -13,6 +14,7 @@ export const App = () => {
   return (
     <>
       <Header />
+      <Cart />
       <Products products={filteredProducts} />
       {IS_DEVELOMENT && <Footer />}
     </>
