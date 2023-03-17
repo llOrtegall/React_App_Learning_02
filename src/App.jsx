@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Products } from "./components/Products";
 import { products as inicialProducts } from "./mocks/products.json";
 import { Header } from "./components/Header";
