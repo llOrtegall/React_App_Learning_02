@@ -14,7 +14,6 @@ function CartItem({ thumbnail, price, title, quantity, addToCart }) {
       <div>
         <strong>{title}</strong> - ${price}
       </div>
-
       <footer>
         <small>
           Qty: {quantity}
@@ -35,7 +34,6 @@ export function Cart() {
         <CartIcon />
       </label>
       <input id={cartCheckboxId} type='checkbox' hidden />
-
       <aside className='cart'>
         <ul>
           {cart.map(product => (
@@ -46,7 +44,6 @@ export function Cart() {
             />
           ))}
         </ul>
-
         <button onClick={clearCart}>
           <ClearCartIcon />
         </button>

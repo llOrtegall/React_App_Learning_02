@@ -16,9 +16,6 @@ export function Filters() {
   }
 
   const handleChangeCategory = (event) => {
-    // ⬇️ ESTO HUELE MAL
-    // estamos pasando la función de actualizar estado
-    // nativa de React a un componente hijo
     setFilters(prevState => ({
       ...prevState,
       category: event.target.value
@@ -27,7 +24,6 @@ export function Filters() {
 
   return (
     <section className='filters'>
-
       <div>
         <label htmlFor={minPriceFilterId}>Precio a partir de:</label>
         <input
@@ -40,7 +36,6 @@ export function Filters() {
         />
         <span>${filters.minPrice}</span>
       </div>
-
       <div>
         <label htmlFor={categoryFilterId}>Categoría</label>
         <select id={categoryFilterId} onChange={handleChangeCategory}>
@@ -49,8 +44,6 @@ export function Filters() {
           <option value='smartphones'>Celulares</option>
         </select>
       </div>
-
     </section>
-
   )
 }
