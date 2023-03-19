@@ -1,16 +1,40 @@
-import { createContext, useState } from "react-dom";
+import { useReducer, createContext } from 'react'
+import { cartReducer, cartInitialState } from '../reducers/cart.jsx'
 
 export const CartContext = createContext()
 
-export function CartProvider({ children }) {
-  const [cart, setCart] = useState([])
+function useCartReducer() {
+  const [state, dispatch] = useReducer(cartReducer, cartInitialState)
 
-  const addToCart = product => { }
-  const clearCart = () => {
-    setCart([])
-  }
+  const addToCart = product => dispatch({
+    type: 'ADD_TO_CART',
+    payload: product
+  })
+
+  const removeFromCart = product => dispatch({
+    type: 'REMOVE_FROM_CART',
+    payload: product
+  })
+
+  const clearCart = () => dispatch({ type: 'CLEAR_CART' })
+
+  return { state, addToCart, removeFromCart, clearCart }
+}
+
+// la dependencia de usar React Context
+// es MÍNIMA
+// eslint-disable-next-line react/prop-types
+export function CartProvider({ children }) {
+  const { state, addToCart, removeFromCart, clearCart } = useCartReducer()
+
   return (
-    <CartContext.Provider value={{ cart, addToCart, clearCart }}>
+    <CartContext.Provider value={{
+      cart: state,
+      addToCart,
+      removeFromCart,
+      clearCart
+    }}
+    >
       {children}
     </CartContext.Provider>
   )
