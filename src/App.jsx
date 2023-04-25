@@ -13,6 +13,7 @@ export function App() {
   useEffect(() => {
     fetch(CAT_ENDPOINT_RANDOM_FACT)
       .then((res) => res.json())
+      // *TODO: handle error if !res.status
       .then((data) => {
         const { fact } = data;
         setFact(data.fact);
