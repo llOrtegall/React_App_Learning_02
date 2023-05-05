@@ -1,0 +1,1 @@
+Este proyecto lo realizo con la finlidad de simular una prueba tecnica de react
