@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-/* Es buena practica tener en constante la API */
+//TODO: Es buena practica tener en constante la API */
 const CAT_ENDPOINT_RAMDON_FACT = `https://catfact.ninja/fact`;
-//const CAT_ENDPOINT_IMAGE = `https://cataas.com/cat/says/${firstWord}?size=50&color=red&json=true`;
+// TODO: const CAT_ENDPOINT_IMAGE = `https://cataas.com/cat/says/${firstWord}?size=50&color=red&json=true`;
 const CAT_PREFIX_IMAGE_URL = "https://cataas.com";
 
 function App() {
