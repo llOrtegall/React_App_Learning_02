@@ -7,12 +7,6 @@ export function NavBar() {
         <li>
           <NavLink to="/" className='text-xl'>Home</NavLink>
         </li>
-        <li>
-          <NavLink to="/about" className='text-xl'>About</NavLink>
-        </li>
-        <li>
-          <NavLink to="/blog" className='text-xl'>Blog</NavLink>
-        </li>
       </ul>
     </nav>
   )
