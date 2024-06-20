@@ -2,6 +2,9 @@ import { createBrowserRouter } from "react-router-dom";
 import { About, Blog, Home, NotFound } from '../Pages'
 import { Layout } from "../Layout/Layout";
 
+import { loaderBlog } from "../Services";
+
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -19,6 +22,7 @@ export const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog />,
+        loader: loaderBlog
       }
     ]
   }
