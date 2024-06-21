@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .active{
-  @apply text-red-600;
+  @apply text-palet-800;
 }
