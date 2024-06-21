@@ -19,7 +19,7 @@ export const Carrousel = () => {
       <div>
         <Title className='text-center pb-2'>InfoRed Te Cuenta ...</Title>
       </div>
-      <div className='flex justify-center items-center relative w-full h-[75vh]'>
+      <div className='flex justify-center items-center relative w-full min-h-[70vh]'>
         {images.map((image, index) => (
           <img key={index} src={image} alt={`Carrousel Image ${index + 1}`}
             className={`absolute w-full h-full object-contain transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
