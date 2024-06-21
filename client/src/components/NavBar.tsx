@@ -8,10 +8,7 @@ export const NavBar = () => {
       </figure>
       <ul className="flex items-center gap-4 dark:text-white font-semibold text-xl">
         <li>
-          <NavLink to="/">Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/">Inicio</NavLink>
         </li>
       </ul>
     </nav>
