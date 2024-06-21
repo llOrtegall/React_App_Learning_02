@@ -10,14 +10,14 @@ const images = [
 
 export const Plataformas = () => {
   return (
-    <Card className="w-4/12">
-      <Title className="text-center pb-2">Acceso Plataformas</Title>
-      <div className="grid grid-cols-2">
+    <Card className="w-4/12 p-2">
+      <Title className="text-center pb-2 text-xs">Acceso Plataformas</Title>
+      <div className="grid grid-cols-2 gap-2">
         {images.map((image, index) => (
           <a href={image.to} className="flex flex-col items-center hover:text-blue-600" target="_blank" rel="noopener noreferrer" >
             <img key={index} src={image.src} alt={image.alt}
-              className="w-28 xl:w-32 cursor-pointer object-cover rounded-full flex justify-center items-start gap-x-2 py-2 px-4 hover:scale-110 transition" />
-            <p className="text-xs xl:text-base font-semibold">{image.titulo}</p>
+              className="w-20 xl:w-32 cursor-pointer object-cover rounded-full border flex justify-center items-start hover:scale-110 transition" />
+            <p className="text-[0.7rem] text-center font-medium text-balance">{image.titulo}</p>
           </a>
         ))
         }
