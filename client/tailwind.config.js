@@ -15,6 +15,20 @@ export default {
     current: 'currentColor',
     extend: {
       colors: {
+        'palet': {
+          '50': '#ecf8ff',
+          '100': '#d4edff',
+          '200': '#b2e0ff',
+          '300': '#7ecfff',
+          '400': '#41b2ff',
+          '500': '#168cff',
+          '600': '#0069ff',
+          '700': '#0051fd',
+          '800': '#013ec1',
+          '900': '#083da0',
+          '950': '#0b2560',
+        },
+
         // light mode
         tremor: {
           brand: {
