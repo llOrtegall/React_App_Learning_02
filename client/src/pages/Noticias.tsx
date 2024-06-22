@@ -5,10 +5,10 @@ export const Noticias = () => {
 
     <Card className='flex flex-col gap-2' title='Noticas - Novedades'>
 
-      <Title className='text-center pb-2 text-xl'>Noticias / Novedades</Title>
+      <Title className='text-center pb-2 text-xs'>Noticias / Novedades</Title>
 
       <main className='flex gap-4'>
-        <section className=''>
+        <section className='w-4/12  text-xs'>
           <div className="mx-auto max-w-lg space-y-6">
             <p className='font-semibold text-justify'>textos de ejemplos: Sección para novedades criticas de interes y general</p>
             <Callout title="Reporte Novedades Críticas" color="red">
@@ -23,7 +23,7 @@ export const Noticias = () => {
             </Callout>
           </div>
         </section>
-        <section className='flex flex-col gap-2'>
+        <section className='w-8/12 flex flex-col gap-1 text-xs'>
           <Card decoration='left'>
             <h2>Noticia # 1</h2>
             (text-de-ejemplo) <span className='font-semibold'>- Aquí iran las noticias de la empresa tendrán resumen en la card y al dar click se abrirá la noticia completa.</span>
