@@ -17,7 +17,7 @@ export const Carrousel = () => {
   return (
     <Card className='w-8/12'>
       <div>
-        <Title className='text-xs text-center pb-'>InfoRed Te Cuenta ...</Title>
+        <Title className='text-sm text-center'>InfoRed Te Cuenta ...</Title>
       </div>
       <div className='flex justify-center items-center relative w-full min-h-[70vh]'>
         {images.map((image, index) => (
