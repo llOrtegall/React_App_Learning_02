@@ -1,4 +1,4 @@
-import { Card, Title } from "@tremor/react"
+import { Title } from "@tremor/react"
 
 const images = [
   { titulo: 'Plataforma EduGane', src: 'modle.webp', alt: 'Carrousel Image 3', to: 'http://172.20.1.114/' },
@@ -10,7 +10,7 @@ const images = [
 
 export const Plataformas = () => {
   return (
-    <Card className="w-4/12 p-2 flex flex-col h-full items-center gap-6">
+    <>
       <Title className="text-center text-sm">Acceso Plataformas</Title>
       <div className="grid grid-cols-2 gap-4">
         {images.map((image, index) => (
@@ -22,6 +22,6 @@ export const Plataformas = () => {
         ))
         }
       </div>
-    </Card>
+    </>
   )
 }

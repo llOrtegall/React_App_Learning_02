@@ -1,4 +1,4 @@
-import { Card, Title } from '@tremor/react';
+import { Title } from '@tremor/react';
 import { useState, useEffect } from 'react';
 
 const images = ['1.webp', '2.webp', '3.webp'];
@@ -15,17 +15,17 @@ export const Carrousel = () => {
   }, [images.length]);
 
   return (
-    <Card className='w-8/12'>
+    <>
       <div>
         <Title className='text-sm text-center'>InfoRed Te Cuenta ...</Title>
       </div>
-      <div className='flex justify-center items-center relative w-full min-h-[70vh]'>
+      <div className='flex justify-center items-center relative w-full h-96'>
         {images.map((image, index) => (
           <img key={index} src={image} alt={`Carrousel Image ${index + 1}`}
             className={`absolute w-full h-full object-contain transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
           />
         ))}
       </div>
-    </Card>
+    </>
   )
 };
