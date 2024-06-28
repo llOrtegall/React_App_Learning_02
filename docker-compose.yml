@@ -1,0 +1,12 @@
+version: '3.6'
+
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./config:/etc/nginx/conf.d
+      - ./client/dist:/usr/share/nginx/html
+    environment:
+      - TZ=America/Bogota
